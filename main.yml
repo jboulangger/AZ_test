@@ -4,5 +4,5 @@
 
   tasks:
   - name: Depurando
-    degug: 
+    debug: 
       msg: "Hola mundo"
