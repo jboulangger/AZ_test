@@ -1,4 +1,4 @@
---
+---
 - name: Conexión con servidores AZ 
   hosts: Cloud_Azure
 
