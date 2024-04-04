@@ -1,5 +1,5 @@
 [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
-wget https://raw.githubusercontent.com/jboulangger/AZ_test/main/AnsibleConfig.ps1 -OutFile AnsibleConfig.ps1
+wget https://raw.githubusercontent.com/jboulangger/WinRM-conf/main/AnsibleConfig.ps1 -OutFile AnsibleConfig.ps1
 .\AnsibleConfig.ps1 -EnableCredSSP -DisableBasicAuth -Verbose
 winrm enumerate winrm/config/listener
 Get-ChildItem -Path WSMan:\localhost\Listener | Where-Object { $_.Keys -eq “Transport=HTTP” } | Remove-Item -Recurse -Force
