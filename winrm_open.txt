@@ -6,3 +6,5 @@ Get-ChildItem -Path WSMan:\localhost\Listener | Where-Object { $_.Keys -eq “Tr
 winrm enumerate winrm/config/listener
 restart-service winrm
 winrm enumerate winrm/config/listener
+echo "-----"
+

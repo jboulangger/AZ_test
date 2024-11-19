@@ -1,8 +1,0 @@
----
-- name: Conexión con servidores AZ 
-  hosts: Cloud_Azure
-
-  tasks:
-  - name: Depurando
-    debug: 
-      msg: "Hola mundo"
